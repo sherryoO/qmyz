@@ -1,0 +1,101 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video,hr {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+html,body{
+    font-size: 14px;
+    color: #333;
+    font-family:'Microsoft Yahei','Helvetica Neue', Helvetica, STHeiTi, Arial, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%; 
+    overflow-x: hidden; 
+}
+body{
+    -webkit-user-select: none; /*禁止页面文字选择*/
+    -webkit-text-size-adjust: none; /*禁止文字自动调整大小*/
+    -webkit-overflow-scrolling: touch; /*局部滚动*/
+}
+a,img{
+    -webkit-touch-callout:none;/*禁用长按页面时的弹出菜单(iOS下有效)*/
+}
+audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    border: none;
+    vertical-align: middle;
+    display: block;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+a:active { outline: 0; }
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+em {
+    font-style: normal;
+}
+input {
+    outline: none;
+    -webkit-box-sizing:border-box;
+}
+/*去除webkit的滚动条*/
+element::-webkit-scrollbar{
+    display: none;
+}
+a,li,div,button,input,select,textarea,em,a:focus,button:focus,input:focus,select:focus,textarea:focus,em:focus[onclick] {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/* 去除iphone ipad 设备默认按钮样式 */
+input[type="submit"], input[type="reset"], input[type="button"], button{
+    -webkit-appearance: none;
+    border-radius: 0; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #cccccc; }

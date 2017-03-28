@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title>全民易装</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../public/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
+	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../public/js/swiper.min.js"></script>
+</head>
+<body>
+	<div class="clearfix" id="header_index">
+		<a href="javascript:void(0)">
+			<i class="icon1"></i>
+			<p>身边案例</p>
+		</a>
+		<a href="../tsfw/index.html">
+			<i class="icon2"></i>
+			<p>装修流程</p>
+		</a>
+		<a href="../ccyz/index.html">
+			<i class="icon3"></i>
+			<p>出彩易装</p>
+		</a>
+		<a href="../other/yhhd.html">
+			<i class="icon4"></i>
+			<p>免费福利</p>
+		</a>
+	</div>
+	<div class="banner_index">
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		    	<div class="swiper-slide ">
+		    		<a href="gsjs.html">
+		    			<img src="../../public/images/banner1.jpg">
+		    		</a>
+		    	</div>
+		        <div class="swiper-slide">
+					<a href="khpj.html">
+						<img src="../../public/images/banner1.jpg">
+					</a>
+		        </div>
+                <div class="swiper-slide">
+        			<a href="mthz.html">
+        				<img src="../../public/images/banner1.jpg">
+        			</a>
+                </div>
+		        <div class="swiper-slide">
+					<a href="nbkw.html">
+						<img src="../../public/images/banner1.jpg">
+					</a>
+		        </div>
+                <div class="swiper-slide">
+        			<a href="banner.html">
+        				<img src="../../public/images/banner1.jpg">
+        			</a>
+                </div>
+		    </div>
+		    <div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<div id="map">
+		<img src="../../public/images/map.jpg">
+	</div>
+	<script type="text/javascript" src="../../public/js/footer.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			swiper = new Swiper('.swiper-container', {
+			    direction : 'horizontal',
+			    speed:500,
+			    autoplay : 3000,
+			    preloadImages:true,
+			    pagination: '.swiper-pagination',
+			    autoplayDisableOnInteraction : false,
+			});
+		})
+	</script>
+</body>
+</html>

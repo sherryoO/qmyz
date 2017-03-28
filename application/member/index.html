@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title>会员中心</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../public/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
+	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="userTop">
+			<div class="userHead clearfix">
+				<a href="setspace.html" class="userImg">
+					<img src="../../public/images/avatar_pj.png" alt="" >
+				</a>
+				<div class="userInfo">
+					<p class="userName">用户昵称</p>
+					<a href="setspace.html" class="userChange">
+						<span>编辑资料</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="userBom">
+			<ul>
+				<li>
+					<a href="">
+						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+						<span>我的申请</span>
+						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+						<span>我的消息</span>
+						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+						<span>装修开始时间</span>
+						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+						<span>兴趣标签</span>
+						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+						<span>手机绑定</span>
+						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script>
+		$(function(){
+			window.onload = function(){
+				var userH = $(".userImg").width();
+				$(".userImg").height(userH);
+				// console.log(userH);
+			}
+		})
+	</script>
+</body>
+</html>

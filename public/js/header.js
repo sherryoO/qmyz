@@ -1,0 +1,23 @@
+// 顶部菜单 除首页外都包含
+document.writeln("<header class=\'clearfix\'>");
+document.writeln("	<a href=\'../index/index.html\'>");
+document.writeln("		<i class=\'icon1\'></i>");
+document.writeln("		<p>首页</p>");
+document.writeln("	</a>");
+document.writeln("	<a href=\'javascript:void(0)\'>");
+document.writeln("		<i class=\'icon2\'></i>");
+document.writeln("		<p>身边案例</p>");
+document.writeln("	</a>");
+document.writeln("	<a href=\'../tsfw/index.html\'>");
+document.writeln("		<i class=\'icon3\'></i>");
+document.writeln("		<p>装修流程</p>");
+document.writeln("	</a>");
+document.writeln("	<a href=\'../ccyz/index.html\'>");
+document.writeln("		<i class=\'icon4\'></i>");
+document.writeln("		<p>出彩易装</p>");
+document.writeln("	</a>");
+document.writeln("	<a href=\'../other/yhhd.html\'>");
+document.writeln("		<i class=\'icon5\'></i>");
+document.writeln("		<p>免费福利</p>");
+document.writeln("	</a>");
+document.writeln("</header>");

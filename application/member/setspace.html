@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title>编辑资料</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../public/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
+	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<div class="bg2">
+		<div class="changeList">
+			<form action="" enctype="multipart/form-data" method="post" id="_form">
+			<input  name="uid" id="uid" type="hidden" value="{$user.uid}"/>
+				<ul>
+					<li>
+						<div class="zuo">
+							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+							<span>修改个人头像</span>
+						</div>
+						<div class="upImg fr">
+							<img src="../../public/images/avatar_pj.png" class="upPhotoImg"/>
+							<input type="file" value="点击此处上传照片" class="upPhoto" id="photo" name="photo" />
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="zuo">
+							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+							<span>昵&nbsp;&nbsp;&nbsp;称</span>
+						</div>
+						<div class="setName">
+							<input type="text" value="" id="setName" name="username">
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="zuo">
+							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+							<span>性&nbsp;&nbsp;&nbsp;别</span>
+						</div>
+						<div class="sex" id="sex">
+							<input type="radio" name="sex" id="" value="男"><span>男</span>
+							<input type="radio" name="sex" id="" value="女"><span>女</span>
+							<input type="radio" name="sex" id="" value="保密" checked><span>保密</span>
+
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="zuo">
+							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+							<span>小区位置</span>
+						</div>
+						<div class="setName">
+							<input type="text" value="" id="setName" name="username">
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="zuo">
+							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+							<span>面积</span>
+						</div>
+						<div class="setName">
+							<select>
+								<option selected value="0">面积</option>
+								<option value="0">80㎡以下</option>
+								<option value="1">80~100㎡</option>
+								<option value="2">100~120㎡</option>
+								<option value="3">120㎡以上</option>
+							</select>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="zuo">
+							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+							<span>户型</span>
+						</div>
+						<div class="setName">
+							<select>
+								<option selected value="0">户型</option>
+								<option value="0">三室两厅一卫</option>
+								<option value="1">三室两厅两卫</option>
+								<option value="2">三室一厅一卫</option>
+								<option value="3">两室两厅一卫</option>
+								<option value="3">一室一厅一卫</option>
+								<option value="3">loft复式</option>
+								<option value="3">别墅</option>
+								<option value="3">其他</option>
+							</select>
+						</div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+
+				<button class="saveBtn">提交修改</button>
+			</form>
+		</div>
+
+		
+
+	</div>
+	<script src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src=" js/image-file-visible.js"></script>
+	<script src="js/layer.js"></script>
+	<script>
+
+		window.onload = function(){
+			$.imageFileVisible({
+				wrapSelector: ".upPhotoImg",   
+				fileSelector: ".upPhoto",
+			})
+		}
+
+	</script>
+	<script>
+		$(function(){
+			$(".sex em").click(function(){
+				$(this).addClass("active").siblings().removeClass("active");
+				if ($(".active").hasClass("man")) {
+					$(".man img").attr("src","images/iconMW.png");
+					$(".woman img").attr("src","images/iconWC.png");
+				}else{
+					$(".woman img").attr("src","images/iconWW.png");
+					$(".man img").attr("src","images/iconMC.png");
+				}
+				if($(this).addClass("active")){
+					$('#se').attr("value",$(".active span").html());
+				}
+			})
+
+		})//
+	</script>
+	<script>
+
+		(function($) {
+		$.imageFileVisible = function(options){    
+			// 默认选项
+			var defaults = {    
+				//包裹图片的元素
+				wrapSelector: null,    
+				fileSelector:  null ,
+				width : '100%',
+				height: 'auto',
+				errorMessage: "不是图片"
+			 };
+
+			var opts = $.extend(defaults, options);
+			$(opts.fileSelector).change(function(){
+				var file = this.files[0];
+				/*if(file.size > 500000){
+					layer.msg('请确保所传的图片小于500K ！');
+					return false;
+				}*/
+				var imageType = /image.*/;
+				if (file.type.match(imageType)) {
+					var reader = new FileReader();
+					reader.onload = function(){
+						var img = new Image();
+						img.src = reader.result;
+						$(img).width( opts.width);
+						$(img).height( opts.height);
+						$(opts.wrapSelector).attr("src", img.src);
+						$(opts.wrapSelector).attr("name", "imgBG");
+						$("#photo").val(img.src)
+					};
+					reader.readAsDataURL(file);				
+				}else{
+					layer.msg(opts.errorMessage);
+				}
+			});
+		};     
+		})(jQuery);
+
+
+
+	</script>
+	<script>
+		$(function(){
+			function jiaoyan(){
+			    var istrue =1;
+			    if($("#setName").val()=="")	
+			    	{layer.msg('请填写您的昵称'); istrue=2; return false;}
+			    if(istrue==1){
+			        return true;
+			    };
+			}
+
+			$(".saveBtn").click(function(){
+	            if(jiaoyan()){
+	            	document.getElementById('_form').submit();
+	            }
+			})
+
+
+		})//
+	</script>
+</body>
+</html>
