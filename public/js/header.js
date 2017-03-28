@@ -16,7 +16,7 @@ document.writeln("	<a href=\'../ccyz/index.html\'>");
 document.writeln("		<i class=\'icon4\'></i>");
 document.writeln("		<p>出彩易装</p>");
 document.writeln("	</a>");
-document.writeln("	<a href=\'../other/yhhd.html\'>");
+document.writeln("	<a href=\'../mffl/index.html\'>");
 document.writeln("		<i class=\'icon5\'></i>");
 document.writeln("		<p>免费福利</p>");
 document.writeln("	</a>");
