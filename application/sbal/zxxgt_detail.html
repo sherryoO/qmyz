@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title>装修效果图</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../public/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
+	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../public/js/swiper.min.js"></script>
+</head>
+<body>
+	<div class="padd15">
+		<div class="banner_zxxgt">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			    	<div class="swiper-slide ">
+			    		<a href="gsjs.html">
+			    			<img src="../../public/images/banner1.jpg">
+			    		</a>
+			    	</div>
+			        <div class="swiper-slide">
+						<a href="khpj.html">
+							<img src="../../public/images/banner1.jpg">
+						</a>
+			        </div>
+	                <div class="swiper-slide">
+	        			<a href="mthz.html">
+	        				<img src="../../public/images/banner1.jpg">
+	        			</a>
+	                </div>
+			    </div>
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="zx_infos">
+			<ul>
+				<li>
+					<span>装修方案</span>
+					<span>DIY个性化装修</span>
+				</li>
+				<li>
+					<span>户型</span>
+					<span>三室两厅1厨2卫</span>
+				</li>
+				<li>
+					<span>面积</span>
+					<span>120㎡</span>
+				</li>
+				<li>
+					<span>整体造价</span>
+					<span>13万</span>
+				</li>
+				<li>
+					<span>工程监理</span>
+					<span>张监理</span>
+				</li>
+				<li>
+					<span>设计师</span>
+					<span>段公子</span>
+				</li>
+				<li>
+					<span>施工周期</span>
+					<span>62天</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		$(function(){
+			swiper = new Swiper('.swiper-container', {
+			    direction : 'horizontal',
+			    speed:500,
+			    autoplay : 3000,
+			    preloadImages:true,
+			    pagination: '.swiper-pagination',
+			    autoplayDisableOnInteraction : false,
+			});
+		})
+	</script>
+</body>
+</html>

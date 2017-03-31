@@ -1,11 +1,11 @@
 /*放心易装・真保障*/
-.container,.col-xs-4,.col-xs-8,.col-xs-3,.col-xs-6,.col-xs-7,.col-xs-5,.col-xs-9,.col-xs-2,.col-xs-12{
+.container,.col-xs-4,.col-xs-8,.col-xs-3,.col-xs-6,.col-xs-7,.col-xs-5,.col-xs-9,.col-xs-2,.col-xs-12,.col-xs-10{
 	padding: 0;
 }
 #fxyz_zbz{
 	border-bottom: 1px solid #dedede;
 }
-#fxyz_zbz .menu div{
+#fxyz_zbz .menu ul li{
 	border-right: 1px solid #dedede;
 	border-bottom: 1px solid #dedede;
 	border-left: 4px solid #F8F8F8;
@@ -15,13 +15,13 @@
 	line-height: 4rem;
 	background: #F8F8F8;
 }
-#fxyz_zbz .menu div.active{
+#fxyz_zbz .menu ul li.active{
 	background: #fff;
 	border-right: #fff;
 	border-left: 4px solid #2B8CFF;
 	color: #2B8CFF;
 }
-#fxyz_zbz .menu div:last-child{
+#fxyz_zbz .menu ul li:last-child{
 	border-bottom: none;
 }
 #fxyz_zbz .container{
@@ -1267,4 +1267,223 @@ box-shadow: 0 0 2px #765861;
 	text-align: center;
 	border-radius: 4px;
 	margin-top: 2rem;
+}
+/*实地参观——身边案例*/
+.sbal{
+
+}
+.sbal h1{
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 1rem 0 2rem;
+}
+.sbal .reg{
+
+}
+.sbal .reg .box{
+	border: 1px solid #ccc;
+	font-size: 0;
+	margin-bottom: 0.8rem;
+	height: 2.7rem;
+	line-height: 2.7rem;
+}
+.sbal .reg .box span{
+	width: 3.5rem;
+	display: inline-block;
+	font-size: 1rem;
+	padding-left: 0.5rem;
+}
+.sbal .reg .box input,.sbal .reg .box button,.sbal .reg .box select,.sbal .reg .box textarea{
+	width: calc(100% - 4rem);
+	display: inline-block;
+	border: none;
+	background: none;
+	height: 100%;
+	text-indent: 0.5rem;
+/*	padding: 0.8rem 0; */
+}
+.sbal .reg .box_other{
+	border: none;
+}
+.sbal .reg .box_other .zuo{
+	width: 60%;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	height: 100%;
+}
+.sbal .reg .box_other .you{
+	width: 40%;
+	box-sizing: border-box;
+	height: 100%;
+	padding-left: 5px;
+}
+.sbal .reg .box_other .you button{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+}
+.sbal .reg a.apply{
+	width: 100%;
+	display: block;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0.7rem;
+	border-radius: 4px;
+	margin-top: 2.5rem;
+	box-sizing: border-box;
+}
+#ycsj .reg a,#sdcg .reg a{
+	width: 40%;
+}
+/*我要设计*/
+.sbal.same_reg .box{
+	border: none;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	margin: 0;
+}
+.sbal.same_reg .box input,.sbal.same_reg .box select{
+	border: 1px solid #ccc;
+}
+.sbal.same_reg .reg .box span {
+    width: 4.2rem;
+}
+.sbal.same_reg .reg .box input,.sbal.same_reg .reg .box button,.sbal.same_reg .reg .box select{
+	width: calc(100% - 4.7rem);
+}
+/*我要咨询*/
+#wyzx .reg .box_text{
+	height: 4rem;
+	line-height: 4rem;
+}
+#wyzx .reg .box_text span{
+	vertical-align: text-bottom;
+}
+#wyzx .reg .box textarea{
+	width: calc(100% - 4rem);
+	display: inline-block;
+	border: 1px solid #ccc;
+	background: none;
+	width: calc(100% - 4.7rem);
+	box-sizing: border-box;
+	height: 100%;
+	resize: none;
+	padding: 0.5rem;
+	text-indent: 0;
+}
+#wyzx .reg .box_read a{
+	font-size: 1rem;
+	padding-left: 0.5rem;
+}
+/*装修效果图*/
+.zxxg_scroll ul li{
+	margin-bottom: 0.5rem;
+}
+.zxxg_scroll ul li a{
+	display: block;
+	height: 100%;
+}
+.zxxg_scroll ul li p{
+	padding-top: 0.5rem;
+}
+/*装修效果图详情页*/
+.zx_infos{
+	margin-top: 1.5rem;
+}
+.zx_infos ul li{
+	font-size: 0;
+	margin-bottom: 0.5rem;
+}
+.zx_infos ul li span{
+	font-size: 1rem;
+	display: inline-block;
+	height: 1.6rem;
+	overflow: hidden;
+	line-height: 1.6rem;
+}
+.zx_infos ul li span:nth-child(1){
+	width: 5rem;
+	word-wrap: break-word;
+	text-align: justify;
+}
+.zx_infos ul li span:nth-child(1):after{
+	content:"";
+	display: inline-block;
+	width:100%;
+	overflow:hidden;
+	height:0;
+}
+.zx_infos ul li span:nth-child(2){
+	width: calc(100% - 5rem);
+	padding-left: 1rem;
+	box-sizing: border-box;
+}
+/*装修报价*/
+#zxbj .reg .box input{
+	border: none;
+}
+#zxbj .num_bj{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background: #dedede;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#zxbj .num_bj span{
+	color: red;
+}
+#zxbj a.apply{
+	width: 50%;
+}
+/*身边案例*/
+#sbal .top{
+	border: 1px solid #ccc;
+}
+#sbal .top .col-xs-10{
+	height: 12rem;
+}
+#sbal .top .col-xs-10 .tab_big{
+	height: 100%;
+	display: none;
+}
+#sbal .top .col-xs-10 .tab_big img{
+	height: 100%;
+	overflow: hidden;
+}
+#sbal .top .col-xs-2{
+
+}
+#sbal .top .col-xs-2 .tab_sml{
+	width: 100%;
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+#sbal .top .col-xs-2 .tab_sml:last-child{
+	border-bottom: none;
+}
+#sbal .top .col-xs-2 .tab_sml.active{
+	background: #dedede;
+}
+#sbal .mid{
+	margin: 1rem 0;
+}
+#sbal .mid .col-xs-4{
+	padding: 0.5rem 0;
+}
+#sbal .mid .col-xs-4:nth-child(2),#sbal .mid .col-xs-4:nth-child(5){
+	text-align: center;
+}
+#sbal .mid .col-xs-4:nth-child(3n){
+	text-align: right;
+}
+#sbal .mid .col-xs-4 a{
+
+}
+#sbal .mid .col-xs-4 a span{
+
 }

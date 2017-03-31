@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title>装修报价</title>
+<!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="../../public/css/base.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
+	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../public/js/swiper.min.js"></script>
+</head>
+<body>
+	<div class="sbal same_reg" id="zxbj">
+		<div class="banner_zxbj">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			    	<div class="swiper-slide ">
+			    		<a href="gsjs.html">
+			    			<img src="../../public/images/banner1.jpg">
+			    		</a>
+			    	</div>
+			        <div class="swiper-slide">
+						<a href="khpj.html">
+							<img src="../../public/images/banner1.jpg">
+						</a>
+			        </div>
+	                <div class="swiper-slide">
+	        			<a href="mthz.html">
+	        				<img src="../../public/images/banner1.jpg">
+	        			</a>
+	                </div>
+			    </div>
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="num_bj">
+			<p>已经有<span>2235</span>人获取报价</p>
+		</div>
+		<div class="reg reg_zxbj">
+			<div class="box">
+				<span>装修面积</span>
+				<input type="text" name="" id="">
+			</div>
+			<div class="box">
+				<span>装修档次</span>
+				<select>
+					<option selected value="0">装修档次</option>
+					<option value="0">经济适用装</option>
+					<option value="1">豪华精装</option>
+					<option value="2">顶级奢华装</option>
+				</select>
+			</div>
+			<div class="box">
+				<span>您的姓名</span>
+				<input type="text" name="" id="">
+			</div>
+			<div class="box">
+				<span>您的手机</span>
+				<input type="tel" name="" id="">
+			</div>
+			<a href="" class="apply">马上获取报价</a>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript">
+		$(function(){
+			swiper = new Swiper('.swiper-container', {
+			    direction : 'horizontal',
+			    speed:500,
+			    autoplay : 3000,
+			    preloadImages:true,
+			    pagination: '.swiper-pagination',
+			    autoplayDisableOnInteraction : false,
+			});
+		})
+	</script>
+</body>
+</html>

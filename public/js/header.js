@@ -4,7 +4,7 @@ document.writeln("	<a href=\'../index/index.html\'>");
 document.writeln("		<i class=\'icon1\'></i>");
 document.writeln("		<p>首页</p>");
 document.writeln("	</a>");
-document.writeln("	<a href=\'javascript:void(0)\'>");
+document.writeln("	<a href=\'../sbal/index.html\'>");
 document.writeln("		<i class=\'icon2\'></i>");
 document.writeln("		<p>身边案例</p>");
 document.writeln("	</a>");
