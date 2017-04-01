@@ -1487,3 +1487,52 @@ box-shadow: 0 0 2px #765861;
 #sbal .mid .col-xs-4 a span{
 
 }
+#sbal .bom{
+
+}
+#sbal .bom .lists{
+
+}
+#sbal .bom .lists ul{
+	font-size: 0;
+}
+#sbal .bom .lists ul li{
+	display: inline-block;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	padding: 0.5rem;
+}
+#sbal .bom .lists ul li.active{
+	color: blue;
+}
+#sbal .bom .contents{
+	border: 1px solid #ccc;
+}
+#sbal .bom .contents .theme{
+	display: none;
+}
+#sbal .bom .contents .theme .theme_pic{
+
+}
+#sbal .bom .contents .theme .theme_pic .pic_list{
+	display: none;
+}
+#sbal .bom .contents .theme .theme_lists{
+	width: 100%;
+}
+#sbal .bom .contents .theme .theme_lists ul{
+	font-size: 0;
+	width: 100%;
+	overflow-x: auto;
+	/* height: 100%; */
+	white-space: nowrap;
+}
+#sbal .bom .contents .theme .theme_lists ul li{
+	display: inline-block;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	font-size: 1rem;
+}
+#sbal .bom .contents .theme .theme_lists ul li.active{
+	color: blue;
+}
