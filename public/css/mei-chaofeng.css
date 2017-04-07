@@ -18,8 +18,14 @@ label {
 	border: #E5E5E5 solid 1px;
 	font-size: 1rem;
 }
-.bg-color {
-	background: #e8efff;
+.full_s{
+	height: 100%;
+}
+.login_bg {
+	background: url(../../public/images/login_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
 }
 .padd0 {
 	padding: 0;
@@ -285,136 +291,6 @@ label {
 .import {
 	color: #FE6270;
 }
-/*身边案例*/
-#fxyz_zbz .case-menu div {
-	border-left: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
-	border-right: none;
-}
-#fxyz_zbz .case-menu div.active {
-	background: #fff;
-	border-left: #fff;
-}
-#fxyz_zbz .case-menu {
-	padding: 0;
-}
-.moni-lbar {
-	width: 100%;
- height: `100%;
-	line-height: 12rem;
-	text-align: center;
-}
-.sevice-con {
-	display: block;
-	overflow: hidden;
-}
-.sevice-con a {
-	display: block;
-	text-align: center;
-	line-height: 2.5rem;
-}
-.sevice-con li a:before {
-	content: '';
-	width: 1rem;
-	height: 1rem;
-	border: 1px solid #f00;
-}
-.sevice-con li:nth-child(1) a:before {
-	background: url("");
-}
-.sevice-con li:nth-child(2) a:before {
-	background: url("");
-}
-.sevice-con li:nth-child(3) a:before {
-	background: url("");
-}
-.sevice-con li:nth-child(4) a:before {
-	background: url("");
-}
-.sevice-con li:nth-child(5) a:before {
-	background: url("");
-}
-.sevice-con li:nth-child(6) a:before {
-	background: url("");
-}
-.exp-menu a {
-	display: inline-block;
- padding: 0 .8rem;
-	border-left: #ccc solid 1px;
-}
-.exp-menu a:first-child {
-	padding-left: 0;
-	border: none;
-}
-.my-tab li {
-	width: 18%;
-	float: left;
-	margin: 0 1.1%;
-}
-.my-tab li:first-child {
-	margin-left: 0;
-}
-.my-tab li a {
-	display: block;
-	width: 100%;
-	background: url("");
-	text-align: center;
-	line-height: 3rem;
-	border: #ccc solid 1px;
-	text-decoration: none;
-}
-.exp-cen {
-	width: 100%;
-	height: 10rem;
-	line-height: 10rem;
-	border: #ccc solid 1px;
-	text-align: center;
-}
-.exp-map h3 {
-	font-size: 1.1rem;
-}
-.exp-map .map-con {
-	width: 100%;
-	height: 10rem;
-	line-height: 10rem;
-	text-align: center;
-	border: #ccc solid 1px;
- margin: .5rem 0;
-	background: url("");
-}
-/*弹出层*/
-.pop {
-	position: absolute;
-	z-index: 999;
-	width: 80%;
-	left: 50%;
-	top: 0;
-	margin-left: -40%;
-	border: #ccc solid 1px;
-	padding: 1.5rem;
-	display: none;
-}
-.pop h1 {
-	font-size: 1.5rem;
-	text-align: center;
-	line-height: 4rem;
-}
-.pop>a {
-	position: absolute;
-	right: 1rem;
-	top: 1rem;
- padding: .2rem .6rem;
-	border: #ccc solid 1px;
-	border-radius: 50%;
-}
-.mask {
-}
-/*远程实景在线观看申请*/
-.yuancsj-con h1 {
-	font-size: 1.5rem;
-	line-height: 5rem;
-	text-align: center;
-}
 /*按钮样式*/
 .button-ty {
 	text-align: center;
@@ -429,8 +305,172 @@ label {
 	width: 10rem;
 	margin-left: -5rem;
 }
-/*远程实景着陆页*/
-.land-con {
-	background: url("");
-}
 /*木婉清修改*/
+/*注册*/
+#register{
+	z-index: 1;
+}
+.formBox{
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+.formBox .reg_wrap .row{
+	border-bottom: 1px solid #fff;
+	height: 4rem;
+}
+.formBox .reg_wrap .row .icons{
+	width: 2rem;
+	float: left;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+#register .reg_wrap .row .icons i,#findPassword .reg_wrap .row .icons i{
+	display: block;
+	width: 1.04rem;
+	height: 1.5rem;
+	background: url(../../public/images/icons.png) no-repeat;
+	background-size: 26.79rem 71.43rem;
+}
+#register .reg_wrap .row .icons i.icon1,#findPassword .reg_wrap .row .icons i.icon1{
+	background-position: 0 0;
+}
+#register .reg_wrap .row .icons i.icon2,#findPassword .reg_wrap .row .icons i.icon2{
+	width: 1.39rem;
+	height: 1.5rem;
+	background-position: -1.04rem 0;
+}
+.formBox .reg_wrap .row input{
+	border: none;
+	background: none;
+	font-size: 1.07rem;
+	color: #fff;
+	float: left;
+	height: 100%;
+}
+.formBox .reg_wrap .row input#code{
+	width: 50%;
+}
+.formBox .reg_wrap .row .btn_r{
+	float: right;
+	height: 100%;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+}
+.formBox .reg_wrap .row button{
+	border: none;
+	background: none;
+	color: #fff;
+	background: #2b8cff;
+	padding: 0.5rem 1rem;
+	border-radius: 15px;
+	font-size: 0.8rem;
+	width: 6.4rem;
+}
+.formBox .row3{
+	margin-top: 0.8rem;
+}
+.formBox .row3 input{
+	vertical-align: middle;
+}
+.formBox .row3 span{
+	color: #fff;
+	font-size: 0.8rem;
+}
+.formBox .row3 span a{
+	color: #89bfff;
+	font-size: 0.8rem;
+}
+.formBox #next_btn{
+	font-size: 1.28rem;
+	color: #fff;
+	background: rgba(255,255,255,.4);
+	width: 100%;
+	display: block;
+	border-radius: 20px;
+	text-align: center;
+	height: 2.85rem;
+	line-height: 2.85rem;
+	margin-top: 3rem;
+}
+.formBox p.other{
+	font-size: 0.9rem;
+	color: #fff;
+	margin-top: 1rem;
+}
+.formBox p.other a{
+	color: #89bfff;
+}
+/*设置密码*/
+#setPassword,#newPassword{
+	position: absolute;
+	top: 0;
+	left: 10%;
+	z-index: 2;
+	display: none;
+}
+.formBox .title{
+	font-size: 1.07rem;
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+}
+#setPassword .reg_wrap .row .icons i,#newPassword .reg_wrap .row .icons i{
+	display: block;
+	width: 1.25rem;
+	height: 1.5rem;
+	background: url(../../public/images/icons.png) no-repeat;
+	background-size: 26.79rem 71.43rem;
+}
+#setPassword .reg_wrap .row .icons i.icon1,#newPassword .reg_wrap .row .icons i.icon1{
+	background-position: -4.96rem 0;
+}
+#setPassword .reg_wrap .row .icons i.icon2,#newPassword .reg_wrap .row .icons i.icon2{
+	width: 1.21rem;
+	height: 1.5rem;
+	background-position: -2.43rem 0;
+}
+.formBox .reg_wrap .row .icons.icon_r{
+	float: right;
+	width: auto;
+}
+#setPassword .reg_wrap .row .icons i.icon3,#newPassword .reg_wrap .row .icons i.icon3,#login .reg_wrap .row .icons i.icon3{
+	width: 1.14rem;
+	height: 0.54rem;
+	background-position: 0 -2.57rem;
+}
+/*登录*/
+#login .login_logo{
+
+}
+#login .formBox{
+	margin-top: 0;
+}
+#login .reg_wrap .row .icons i{
+	display: block;
+	width: 1.32rem;
+	height: 1.5rem;
+	background: url(../../public/images/icons.png) no-repeat;
+	background-size: 26.79rem 71.43rem;
+}
+#login .reg_wrap .row .icons i.icon1{
+	background-position: -3.64rem 0;
+}
+#login .reg_wrap .row .icons i.icon2{
+    width: 1.21rem;
+    height: 1.5rem;
+    background-position: -2.43rem 0;
+}
+#login .links{
+	margin-top: 1rem;
+}
+#login .links a{
+	color: #fff;
+	font-size: 0.9rem;
+}
+#login .links a:first-child{
+	text-decoration: underline;
+}
