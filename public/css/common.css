@@ -34,7 +34,7 @@ a:focus, a:hover {
 }
 /*为公共头部菜单预留高度空间*/
 .menu_top{
-    padding-top: 5.6rem;
+    padding-top: 5.5rem;
 }
 header{
     position: fixed;

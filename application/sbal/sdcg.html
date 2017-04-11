@@ -9,23 +9,24 @@
 	<title>实地参观</title>
 <!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="../../public/css/base.css">
-	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/layer.css">
 	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
 	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="../../public/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../../public/js/layer.js"></script>
+	<script type="text/javascript" src="../../public/js/reg.js"></script>
 </head>
-<body>
-	<div class="padd20 sbal" id="sdcg">
-		<h1>实地参观报名申请</h1>
+<body class="menu_top">
+	<div class="grayBack"></div>
+	<div class="sbal_common" id="sdcg">
+		<div class="title">
+			<span>实地参观报名申请</span>
+		</div>
 		<div class="reg">
 			<div class="box">
 				<span>姓名</span>
 				<input type="text" name="" id="" placeholder="请输入姓名">
-			</div>
-			<div class="box">
-				<span>地址</span>
-				<input type="text" name="" id="" placeholder="请填写您所在位置">
 			</div>
 			<div class="box">
 				<span>手机号</span>
@@ -44,5 +45,22 @@
 			<a href="" class="apply">提交申请</a>
 		</div>
 	</div>
+	<script type="text/javascript" src="../../public/js/header.js"></script>
+	<script type="text/javascript" src="../../public/js/footer.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#sdcg #sendBtn').click(function(){
+				if (!test_tel()) {
+					return false;
+				}else{
+					send_mobile_code();
+				}
+			})
+			$('#sdcg .apply').click(function(){
+				apply(3);
+			})
+
+		})//
+	</script>
 </body>
 </html>

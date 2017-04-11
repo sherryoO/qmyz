@@ -9,15 +9,20 @@
 	<title>我要设计</title>
 <!-- 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="../../public/css/base.css">
-	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="../../public/css/swiper.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/layer.css">
 	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
 	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="../../public/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../../public/js/layer.js"></script>
+	<script type="text/javascript" src="../../public/js/reg.js"></script>
 </head>
-<body>
-	<div class="padd20 sbal same_reg" id="wysj">
-		<h1>申请专业设计</h1>
+<body class="menu_top">
+	<div class="grayBack"></div>
+	<div class="sbal_common" id="wysj">
+		<div class="title">
+			<span>申请专业设计</span>
+		</div>
 		<div class="reg">
 			<div class="box">
 				<span>姓名</span>
@@ -27,37 +32,35 @@
 				<span>手机号</span>
 				<input type="tel" name="" id="" placeholder="请输入手机号">
 			</div>
-			<div class="box">
-				<span>建筑面积</span>
-				<input type="text" name="" id="" placeholder="请输入您的房屋面积（㎡）">
-			</div>
-			<div class="box">
-				<span>您的房型</span>
-				<select>
-					<option selected value="0">您的房型</option>
-					<option value="0">三室两厅一厨一卫</option>
-					<option value="1">两室两厅一厨一卫</option>
-					<option value="2">三室两厅一厨两卫</option>
-					<option value="3">一室一厅一卫</option>
-					<option value="4">复式</option>
-					<option value="5">别墅</option>
-				</select>
-			</div>
-			<div class="box">
-				<span>装修档次</span>
-				<select>
-					<option selected value="0">装修档次</option>
-					<option value="0">经济适用装</option>
-					<option value="1">豪华精装</option>
-					<option value="2">顶级奢华装</option>
-				</select>
-			</div>
-			<div class="box">
-				<span>地址</span>
-				<input type="text" name="" id="" placeholder="请填写小区地址">
+			<div class="box box_other clearfix">
+				<div class="zuo fl">
+					<span>验证码</span>
+					<input type="tel" name="" id="" placeholder="请输入验证码">
+				</div>
+				<div class="you fr">
+					<button>获取验证码</button>
+				</div>
+				
 			</div>
 			<a href="" class="apply">立即申请</a>
 		</div>
 	</div>
+	<script type="text/javascript" src="../../public/js/header.js"></script>
+	<script type="text/javascript" src="../../public/js/footer.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#wysj #sendBtn').click(function(){
+				if (!test_tel()) {
+					return false;
+				}else{
+					send_mobile_code();
+				}
+			})
+			$('#wysj .apply').click(function(){
+				apply(5);
+			})
+
+		})//
+	</script>
 </body>
 </html>

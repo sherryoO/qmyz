@@ -13,81 +13,77 @@
 	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
 	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
 	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../../public/js/index.js"></script>
 </head>
-<body>
-	<div class="bg2">
+<body class="menu_top bgcolor">
+	<div class="" id="setspace">
 		<div class="changeList">
-			<form action="" enctype="multipart/form-data" method="post" id="_form">
-			<input  name="uid" id="uid" type="hidden" value="{$user.uid}"/>
-				<ul>
-					<li>
+			<!-- <input  name="uid" id="uid" type="hidden" value="{$user.uid}"/> -->
+				<ul class="ul_top">
+					<li class="clearfix">
 						<div class="zuo">
-							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
 							<span>修改个人头像</span>
 						</div>
-						<div class="upImg fr">
-							<img src="../../public/images/avatar_pj.png" class="upPhotoImg"/>
-							<input type="file" value="点击此处上传照片" class="upPhoto" id="photo" name="photo" />
+						<div class="fr">
+							<div class="upImg">
+								<img src="../../public/images/avatar_pj.jpg" class="upPhotoImg"/>
+								<input type="file" value="点击此处上传照片" class="upPhoto" id="photo" name="photo" />
+							</div>
+							<div class="icon_r">
+								<i class="icon1"></i>
+							</div>
 						</div>
-						<div class="clear"></div>
-					</li>
-					<li>
-						<div class="zuo">
-							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
-							<span>昵&nbsp;&nbsp;&nbsp;称</span>
-						</div>
-						<div class="setName">
-							<input type="text" value="" id="setName" name="username">
-						</div>
-						<div class="clear"></div>
-					</li>
-					<li>
-						<div class="zuo">
-							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
-							<span>性&nbsp;&nbsp;&nbsp;别</span>
-						</div>
-						<div class="sex" id="sex">
-							<input type="radio" name="sex" id="" value="男"><span>男</span>
-							<input type="radio" name="sex" id="" value="女"><span>女</span>
-							<input type="radio" name="sex" id="" value="保密" checked><span>保密</span>
 
-						</div>
-						<div class="clear"></div>
 					</li>
-					<li>
+				</ul>
+				<ul class="ul_mid">
+					<li class="li1 clearfix">
 						<div class="zuo">
-							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
-							<span>小区位置</span>
+							<span>昵称：</span>
 						</div>
-						<div class="setName">
+						<div class="setName you">
 							<input type="text" value="" id="setName" name="username">
 						</div>
-						<div class="clear"></div>
 					</li>
-					<li>
+					<li class="li2 clearfix">
 						<div class="zuo">
-							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
-							<span>面积</span>
+							<span>性别：</span>
 						</div>
-						<div class="setName">
-							<select>
-								<option selected value="0">面积</option>
-								<option value="0">80㎡以下</option>
-								<option value="1">80~100㎡</option>
-								<option value="2">100~120㎡</option>
-								<option value="3">120㎡以上</option>
-							</select>
+						<div class="sex you" id="sex">
+							<div class="row checked">
+								<i class="icon1"></i>
+								<input type="radio" name="sex" id="" value="男">
+
+							</div>
+							<div class="row">
+								<i class="icon2"></i>
+								<input type="radio" name="sex" id="" value="女">
+
+							</div>
+							<div class="row">
+								<i class="icon3"></i>
+								<input type="radio" name="sex" id="" value="保密">
+
+							</div>
 						</div>
-						<div class="clear"></div>
 					</li>
-					<li>
+				</ul>
+				<ul class="ul_bom">
+					<li class="li1 clearfix">
 						<div class="zuo">
-							<img src="../../public/images/avatar_pj.png" alt="" class="icon">
-							<span>户型</span>
+							<span>面积：</span>
 						</div>
-						<div class="setName">
+						<div class="you">
+							<input type="text" value="" id="area" name="area" placeholder="请输入住宅面积">
+						</div>
+					</li>
+					<li class="li2 clearfix">
+						<div class="zuo">
+							<span>户型：</span>
+						</div>
+						<div class="you clearfix">
 							<select>
-								<option selected value="0">户型</option>
+								<option selected value="0">请选择住宅户型</option>
 								<option value="0">三室两厅一卫</option>
 								<option value="1">三室两厅两卫</option>
 								<option value="2">三室一厅一卫</option>
@@ -97,21 +93,40 @@
 								<option value="3">别墅</option>
 								<option value="3">其他</option>
 							</select>
+							<div class="icon_r">
+								<div class="border">
+									<i class="icon1"></i>
+								</div>
+							</div>
 						</div>
-						<div class="clear"></div>
+					</li>
+					<li class="li3 clearfix">
+						<div class="zuo">
+							<span>小区位置：</span>
+						</div>
+						<div class="you clearfix">
+							<input type="text" value="" id="address" name="address" placeholder="请填写小区位置">
+							<div class="icon_r">
+								<div class="border">
+									<i class="icon2"></i>
+								</div>
+							</div>
+						</div>
 					</li>
 				</ul>
 
+
+
 				<button class="saveBtn">提交修改</button>
-			</form>
 		</div>
 
 		
 
 	</div>
-	<script src="js/jquery-1.10.1.min.js"></script>
-	<script type="text/javascript" src=" js/image-file-visible.js"></script>
-	<script src="js/layer.js"></script>
+	<script type="text/javascript" src="../../public/js/header.js"></script>
+	<script type="text/javascript" src="../../public/js/footer.js"></script>
+	<script type="text/javascript" src="../../public/js/image-file-visible.js"></script>
+	<script type="text/javascript" src="../../public/js/layer.js"></script>
 	<script>
 
 		window.onload = function(){
@@ -121,24 +136,6 @@
 			})
 		}
 
-	</script>
-	<script>
-		$(function(){
-			$(".sex em").click(function(){
-				$(this).addClass("active").siblings().removeClass("active");
-				if ($(".active").hasClass("man")) {
-					$(".man img").attr("src","images/iconMW.png");
-					$(".woman img").attr("src","images/iconWC.png");
-				}else{
-					$(".woman img").attr("src","images/iconWW.png");
-					$(".man img").attr("src","images/iconMC.png");
-				}
-				if($(this).addClass("active")){
-					$('#se').attr("value",$(".active span").html());
-				}
-			})
-
-		})//
 	</script>
 	<script>
 

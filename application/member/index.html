@@ -14,70 +14,98 @@
 	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
 	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
 </head>
-<body>
-	<div class="container">
+<body class="menu_top bgcolor">
+	<div class="container" id="personal">
 		<div class="userTop">
-			<div class="userHead clearfix">
-				<a href="setspace.html" class="userImg">
-					<img src="../../public/images/avatar_pj.png" alt="" >
+			<div class="userHead">
+				<a href="setspace.html" class="clearfix">
+					<div class="userImg">
+						<img src="../../public/images/avatar_pj.jpg" alt="" >
+					</div>
+					<div class="userInfo">
+						<div class="cen">
+							<p class="userName">金庸</p>
+							<p class="userChange">个人中心：头像、昵称</p>
+						</div>
+
+					</div>
+					<div class="icon_r">
+						<i></i>
+					</div>
 				</a>
-				<div class="userInfo">
-					<p class="userName">用户昵称</p>
-					<a href="setspace.html" class="userChange">
-						<span>编辑资料</span>
-					</a>
-				</div>
 			</div>
 		</div>
 		<div class="userBom">
 			<ul>
 				<li>
-					<a href="">
-						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+					<a href="my_request.html" class="clearfix">
+						<div class="icon_l">
+							<i class="icons icon1"></i>
+						</div>
 						<span>我的申请</span>
-						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+						<div class="icon_r">
+							<i></i>
+						</div>
 					</a>
 				</li>
+				<hr/>
 				<li>
-					<a href="">
-						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+					<a href="my_message.html">
+						<div class="icon_l">
+							<i class="icons icon2"></i>
+						</div>
 						<span>我的消息</span>
-						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+						<div class="icon_r">
+							<i></i>
+						</div>
 					</a>
 				</li>
+			</ul>
+			<ul>
 				<li>
-					<a href="">
-						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+					<a href="javascript:void(0);">
+						<div class="icon_l">
+							<i class="icons icon3"></i>
+						</div>
 						<span>装修开始时间</span>
-						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+						<div class="icon_r">
+							<input type="date" name="bday">
+							<i></i>
+						</div>
 					</a>
 				</li>
+				<hr/>
 				<li>
-					<a href="">
-						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+					<a href="favor.html">
+						<div class="icon_l">
+							<i class="icons icon4"></i>
+						</div>
 						<span>兴趣标签</span>
-						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+						<div class="icon_r">
+							<i></i>
+						</div>
 					</a>
 				</li>
+			</ul>
+			<ul>
 				<li>
-					<a href="">
-						<img src="../../public/images/avatar_pj.png" alt="" class="icon">
+					<a href="change_tel.html">
+						<div class="icon_l">
+							<i class="icons icon5"></i>
+						</div>
 						<span>手机绑定</span>
-						<img src="../../public/images/avatar_pj.png" alt="" class="iconR">
+
+						<div class="icon_r">
+							<input type="tel" value="15072447652" maxlength="11" readonly="">
+							<i></i>
+						</div>
 					</a>
 				</li>
 			</ul>
 		</div>
+		<a href="javascript:void(0);" class="exit_btn">退出当前账号</a>
 	</div>
-	<script src="js/jquery-1.10.1.min.js"></script>
-	<script>
-		$(function(){
-			window.onload = function(){
-				var userH = $(".userImg").width();
-				$(".userImg").height(userH);
-				// console.log(userH);
-			}
-		})
-	</script>
+	<script type="text/javascript" src="../../public/js/header.js"></script>
+	<script type="text/javascript" src="../../public/js/footer.js"></script>
 </body>
 </html>

@@ -9,10 +9,13 @@
 	<title>登录</title>
 	<link rel="stylesheet" type="text/css" href="../../public/css/base.css">
 	<link rel="stylesheet" type="text/css" href="../../public/css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/layer.css">
 	<link rel="stylesheet" type="text/css" href="../../public/css/index.css">
-	<link rel="stylesheet" type="text/css" href="../../public/css/mei-chaofeng.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="../../public/css/mei-chaofeng.css"> -->
 	<script type="text/javascript" src="../../public/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="../../public/js/index.js"></script>
+<!-- 	<script type="text/javascript" src="../../public/js/index.js"></script> -->
+	<script type="text/javascript" src="../../public/js/layer.js"></script>
+	<script type="text/javascript" src="../../public/js/reg.js"></script>
 </head>
 <body class="login_bg">
 	<div id="login">
@@ -25,24 +28,35 @@
 					<div class="icons">
 						<i class="icon1"></i>
 					</div>
-				  	<input type="tel" placeholder="请输入手机号" maxlength="11">
+				  	<input type="tel" id="phone" name="phone" placeholder="请输入手机号" maxlength="11">
 				</div>
 				<div class="row clearfix">
 					<div class="icons">
 						<i class="icon2"></i>
 					</div>
-				  	<input type="text" placeholder="请输入密码">
+				  	<input type="password" id="password" name="password" placeholder="请输入密码">
 				  	<div class="icons icon_r">
 				  		<i class="icon3"></i>
 				  	</div>
 				</div>
 			</div>
-			<a href="" id="next_btn">登录</a>
+			<a href="javascript:void(0);" id="next_btn">登录</a>
 			<div class="links">
-				<a href="" class="fl">快速注册</a>
-				<a href="" class="fr">找回密码</a>
+				<a href="register.html" class="fl">快速注册</a>
+				<a href="find_password.html" class="fr">找回密码</a>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(function(){
+			$('#login #next_btn').click(function(){
+				if (login()) {
+					// window.location = "../index/index.html";
+				}else{
+					return false;
+				}
+			})
+		})//
+	</script>
 </body>
 </html>
